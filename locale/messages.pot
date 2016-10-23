@@ -1,0 +1,194 @@
+# Translations template for PROJECT.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-10-23 11:11-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: templates/oeil.html:2
+msgid "Eyes in the dark !"
+msgstr ""
+
+#: templates/oeil.html:13 templates/oeil.html:25
+#: templates/youarenotalone.html:13 templates/youarenotalone.html:24
+msgid "Add"
+msgstr ""
+
+#: templates/oeil.html:18
+msgid ""
+"A white ellipse can be cut out from a sheet of white paper. The same can "
+"be done with the computer: a shaped filled with white can be added to our"
+" black canvas."
+msgstr ""
+
+#: templates/oeil.html:30
+msgid ""
+"An additional black disk can be cut out of black paper (it is easier to "
+"make small disks with a hole puncher). As earlier, the same can be "
+"achived with the computer: a disk filled with black can be added on the "
+"top of the white shape we just added."
+msgstr ""
+
+#: templates/oeil.html:44
+msgid ""
+"Where the eyes are looking can be expressed very simply, by just moving "
+"the inner disk."
+msgstr ""
+
+#: templates/oeil.html:56
+msgid ""
+"The first eye can be replicated on the right, creating a pair of eyes "
+"glowing in the dark."
+msgstr ""
+
+#: templates/oeil.html:70
+msgid ""
+"An eye in the dark can be represented as a white ellipse, or disk, on a "
+"black background and a smaller black circle in that white ellipse."
+msgstr ""
+
+#: templates/youarenotalone.html:17
+msgid "A nose can be added to the pair of eyes."
+msgstr ""
+
+#: templates/youarenotalone.html:28
+msgid "A mouth can also be added."
+msgstr ""
+
+#: templates/youarenotalone.html:37
+msgid "Additional visual elements"
+msgstr ""
+
+#: templates/youarenotalone.html:42
+msgid ""
+"Simple graphics elements can be added to a pair of eyes. Like an "
+"Halloween pumpkin glowing in the dark."
+msgstr ""
+
+#: templates/wake.html:2 templates/wake.html:13
+msgid "Don't wake it up."
+msgstr ""
+
+#: templates/wake.html:18
+msgid ""
+"We can animate the eyes with elements of randomness, and give the "
+"impression that there is a creature alive and watching. We can also use "
+"the microphone on your device (if you allow so), to capture ambiant noise"
+" levels"
+msgstr ""
+
+#: templates/wake.html:21
+msgid ""
+"We are only looking at the strength of the signal, shown below as a bar, "
+"and make the creature look like responding to noise."
+msgstr ""
+
+#: templates/wake.html:28
+msgid ""
+"This can make an Halloween prop, on a computer connected to a TV, laptop,"
+" tablet, or phone. "
+msgstr ""
+
+#: templates/wake.html:29
+msgid "Full Screen"
+msgstr ""
+
+#: templates/darkisthenight.html:13
+msgid "Dark is the night"
+msgstr ""
+
+#: templates/darkisthenight.html:18
+msgid ""
+"We will work on Halloween and the night. What do you think our base color"
+" should be ?"
+msgstr ""
+
+#: templates/darkisthenight.html:21
+msgid "A graphical Halloween can easily start with black."
+msgstr ""
+
+#: templates/darkisthenight.html:28
+msgid "White shapes"
+msgstr ""
+
+#: templates/darkisthenight.html:33
+msgid ""
+"We can add white geometrical shapes to our black canvas, either cutting "
+"the shapes out of white paper or by clicking / tapping in the black "
+"canvas on the screen."
+msgstr ""
+
+#: templates/index.html:8
+msgid "An Hallowen Adventure With Paper and P5"
+msgstr ""
+
+#: templates/index.html:22
+msgid ""
+"These pages are written as an activity for kids. They are designed to "
+"explore visual creation and expression with both paper, scissors, "
+"glue/tape and computer. The paper creations are used to explain the "
+"simple principles used to make computer graphics through programs."
+msgstr ""
+
+#: templates/index.html:25
+msgid "The programming is in Javascript, using P5.js."
+msgstr ""
+
+#: templates/yeux.html:2
+msgid "A pair of eyes."
+msgstr ""
+
+#: templates/yeux.html:20
+msgid "As we have seen, the eyes can appear looking to the right or to the left."
+msgstr ""
+
+#: templates/yeux.html:34
+msgid ""
+"We can also make closed eyelids by adding black rectangles on the upper "
+"part of the eyes."
+msgstr ""
+
+#: templates/crowd.html:2
+msgid "You are not alone"
+msgstr ""
+
+#: templates/crowd.html:18
+msgid "If we can represent a pair of eyes, we can also represent many eyes."
+msgstr ""
+
+#: templates/crowd.html:30
+msgid "And the eyes can still look around..."
+msgstr ""
+
+#: templates/crowd.html:39
+msgid "Many eyes"
+msgstr ""
+
+
+msgid "Dark Is The Night"
+msgstr ""
+
+msgid "There Is An Eye !"
+msgstr ""
+
+msgid "Additional Visual Elements"
+msgstr ""
+
+msgid "We Are Being Watched."
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
