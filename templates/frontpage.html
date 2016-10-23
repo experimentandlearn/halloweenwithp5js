@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %} ? {% endblock %}
+{% block navigation %} {% endblock %}
+{% block main %}
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
+    <div class="row">
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-6">
+	<center>
+	<div class="list-group">
+	  {% for lang in languages %}
+	  <a href="{{ lang.path }}/index.html" class="list-group-item">
+	    {{ lang.text }}
+	  </a>
+	  {% endfor %}
+	</div>
+	</center>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+{% endblock %}

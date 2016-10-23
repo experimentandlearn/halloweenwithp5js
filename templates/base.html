@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="{{ language.short }}" xml:lang="{{ language.short }}" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/bootstrap-slider.min.js"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/css/bootstrap-slider.min.css">
+    
+    <script language="javascript" type="text/javascript" src="{{ jslibraries }}/p5.js"></script>
+    <!-- uncomment lines below to include extra p5 libraries -->
+    <script language="javascript" src="{{ jslibraries }}/p5.dom.js"></script>
+    <!--<script language="javascript" src="{{ jslibraries }}/libraries/p5.sound.js"></script>-->
+    {% if base_js_script is not none %}
+    <script language="javascript" type="text/javascript" src="{{ base_js_script }}"></script>
+    {% endif %}
+    <!-- this line removes any default padding and style. you might only need one of these values set. -->
+    <!-- <style> body {padding: 0; margin: 0;} </style> -->
+    <link rel="stylesheet" href="/custom.css">
+
+    <title>{% block title %} Title {% endblock %}</title>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="span2">
+	<!--Sidebar content-->
+      </div>
+      <div class="span12">
+	{% block navigation %}
+	<div class="row">
+	  <ul class="nav nav-pills">
+	    <li>
+	      <a href="index.html">
+		<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+	      </a>
+	    </li>
+	    <li role="presentation" class="dropdown">
+	      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+		Sections <span class="caret"></span>
+	      </a>
+	      <ul class="dropdown-menu">
+		{% for page in listpages %}
+		<li class="{{ 'disabled' if (self|quoted) == page.filename else '' }}">
+		  <a href="{{ page.filename }}">{{ gettext(page.title) }}</a>
+		</li>
+		{% endfor %}
+	      </ul>
+	    </li>
+	    {% if page_previous is none %}
+	    <li class="disabled">
+	      <a href="#">
+		<span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+	      </a>
+	    </li>
+	    {% else %}
+	    <li>
+	      <a href="{{ page_previous.filename }}">
+		<span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+	      </a>
+	    </li>
+	    {% endif %}
+	    {% if page_next is none %}
+	    <li class="disabled">
+	      <a href="#">
+		<span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+	      </a>
+	    </li>
+	    {% else %}
+	    <li>
+	      <a href="{{ page_next.filename }}">
+		<span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+	      </a>
+	    </li>
+	    {% endif %}
+	    <li role="presentation" class="dropdown">
+	      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+		Language <span class="caret"></span>
+	      </a>
+	      <ul class="dropdown-menu">
+		{% for l in languages %}
+		<li class="{{ 'disabled' if l == language else '' }}">
+		  <a href="../{{ l.path }}/{{ self | quoted }}">{{ l.short }}</a>
+		</li>
+		{% endfor %}
+	      </ul>
+	    </li>
+	  </ul>
+	</div>
+	{% endblock %}
+	<div class="row">
+	  <hr>
+	</div>
+	{% block main %}
+	{% endblock %}
+      </div>
+    </div>
+<!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %} An Halloween adventure with paper and P5 {% endblock %}
+{% block main %}
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
+    <h1>{{ gettext('An Hallowen Adventure With Paper and P5') }}</h1>
+    <div class="row">
+      <div class="col-md-6">
+	<div class="list-group">
+	  {% for page in listpages %}
+	  <a href="{{ page.filename }}" class="list-group-item">
+	    {{ gettext(page.title) }}
+	  </a>
+	  {% endfor %}
+	</div>
+      </div>
+      <div class="col-md-6">
+	<div class="alert alert-info" role="alert">
+	  <p>
+	    {{ gettext("""These pages are written as an activity for kids. They are designed to explore visual creation and expression with both paper, scissors, glue/tape and computer. The paper creations are used to explain the simple principles used to make computer graphics through programs.""") }}
+	  </p>
+	  <p>
+	    {{ gettext("""The programming is in Javascript, using P5.js.""") }}
+	  </p>
+	  <ul>
+	    <li><a href="https://github.com/experimentandlearn/halloweenwithp5js">https://github.com/experimentandlearn/halloweenwithp5js</a></li>
+	    <li><a href="https://p5js.org">https://p5js.org</a></li>
+	  </ul>
+	</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+{% endblock %}

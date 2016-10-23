@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %} You are not alone {% endblock %}
+{% block main %}
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
+    <div class="row">
+      <div class="col-md-6">
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+            <h1 class="panel-title">
+	      <button type="button" id="b1" class="btn btn-primary">{{ gettext("Add") }}</button>
+	    </h1>
+	  </div>
+	  <div class="panel-body">
+	    <p>{{ gettext("A nose can be added to the pair of eyes.") }}
+	    </p>
+	  </div>
+	</div>
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+            <h1 class="panel-title">
+	      <button type="button" id="b2" class="btn btn-primary">{{ gettext("Add") }}</button>
+	    </h1>
+	  </div>
+	  <div class="panel-body">
+	    <p>{{ gettext("A mouth can also be added.") }}
+	    </p>
+	  </div>
+	</div>
+      </div>
+      <div class="col-md-6">
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+            <h1 class="panel-title">
+	      {{ gettext("Additional visual elements") }}
+	    </h1>
+	  </div>
+	  <div class="panel-body">
+	    <p>
+	      {{ gettext("Simple graphics elements can be added to a pair of eyes. Like an Halloween pumpkin glowing in the dark.") }}
+	    </p>
+	    <div id="sketch-holder">
+	      <script language="javascript" type="text/javascript" src="{{ page_js_script }}"></script>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+{% endblock %}

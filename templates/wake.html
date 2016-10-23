@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %} {{ gettext("Don't wake it up.") }} {% endblock %}
+{% block main %}
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
+    <div class="row">
+      <div class="col-md-12">
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+            <h1 class="panel-title">
+	      {{ gettext("Don't wake it up.") }}
+	    </h1>
+	  </div>
+	  <div class="panel-body">
+	    <p>
+	      {{ gettext("We can animate the eyes with elements of randomness, and give the impression that there is a creature alive and watching. We can also use the microphone on your device (if you allow so), to capture ambiant noise levels") }}
+	    </p>
+	    <p>
+	      {{ gettext("We are only looking at the strength of the signal, shown below as a bar, and make the creature look like responding to noise.") }}
+	    <div class="progress" width="50%">
+	      <div id="microphone-level" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%; -webkit-transition: none !important; transition: none !important;">
+	      </div>
+	    </div>
+	    </p>
+	    <p>
+	      {{ gettext("This can make an Halloween prop, on a computer connected to a TV, laptop, tablet, or phone. ") }}
+	      <button type="button" id="b_fullscreen" class="btn btn-primary">{{ gettext("Full Screen") }}</button>
+	    </p>
+	    <div id="sketch-holder">
+	      <script language="javascript" src="{{ jslibraries }}/p5.sound.js"></script>
+	      <script language="javascript" type="text/javascript" src="{{ page_js_script }}"></script>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+{% endblock %}

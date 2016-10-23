@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %} Dark is the night {% endblock %}
+{% block main %}
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
+    <div class="row">
+      <div class="col-md-4">
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+            <h1 class="panel-title">
+	      {{ gettext("Dark is the night") }}
+	    </h1>
+	  </div>
+	  <div class="panel-body">
+	    <p>
+	      {{ gettext("We will work on Halloween and the night. What do you think our base color should be ?") }}
+	    </p>
+	    <p>
+	      {{ gettext("A graphical Halloween can easily start with black.") }}
+	    </p>
+	  </div>
+	</div>
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+            <h1 class="panel-title">
+	      {{ gettext("White shapes") }}
+	    </h1>
+	  </div>
+	  <div class="panel-body">
+	    <p>
+	      {{ gettext("We can add white geometrical shapes to our black canvas, either cutting the shapes out of white paper or by clicking / tapping in the black canvas on the screen.") }}
+	    </p>
+	  </div>
+	</div>
+      </div>
+      <div class="col-md-8">
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+            <h1 class="panel-title">
+	  </h1>
+	  </div>
+	  <div class="panel-body">
+	    <div id="sketch-holder">
+	      <script language="javascript" type="text/javascript" src="{{ page_js_script }}"></script>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+{% endblock %}
